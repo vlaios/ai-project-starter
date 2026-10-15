@@ -1,0 +1,74 @@
+# ============================================================
+# Base rules: keep in every project
+# ============================================================
+
+# Secrets: never commit real environment files or keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Claude Code: personal settings stay local, shared ones are committed
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+logs/
+
+# ============================================================
+# Python: delete this section if unused
+# ============================================================
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# ============================================================
+# Node / TypeScript / Next.js: delete this section if unused
+# ============================================================
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.turbo/
+coverage/
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# ============================================================
+# PHP: delete this section if unused
+# ============================================================
+vendor/
+var/
+storage/uploads/*
+!storage/uploads/.gitkeep
+.phpunit.result.cache
+.php-cs-fixer.cache
+
+# ============================================================
+# Build output: shared by all stacks
+# ============================================================
+dist/
+build/
