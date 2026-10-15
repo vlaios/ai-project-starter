@@ -59,6 +59,7 @@ Each document reads the one above it and never contradicts it. If the plan confl
 | `.claude/skills/*-coding-style/SKILL.md` | Coding standards for PHP, Python and TypeScript | Claude writes code in one consistent style per language. Delete the stacks you do not use. |
 | `.env.example` | Every environment variable with a placeholder and a comment | Documents configuration without leaking secrets. The real `.env` is never committed. |
 | `.gitignore` | Base rules plus sections per stack | Keeps secrets, build output and editor files out of git from the first commit. |
+| `.gitattributes` | Line ending rules: LF everywhere, CRLF for `.bat` and `.cmd` | Prevents whole-file diffs when working across Windows, WSL and Linux. |
 
 ## Rules for the documents
 
