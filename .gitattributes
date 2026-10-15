@@ -1,0 +1,7 @@
+# Store text files with LF in the repo and check them out with LF,
+# on every OS. Git detects binary files and leaves them alone.
+* text=auto eol=lf
+
+# cmd.exe scripts need CRLF to run reliably on Windows
+*.bat text eol=crlf
+*.cmd text eol=crlf
