@@ -63,10 +63,13 @@ UNKNOWN
 |---|---|---|---|---|
 | UNKNOWN | | | | |
 
-## 6. Agents
+## 6. Dev agents
 
-<!-- Agents are part of the project from day one. List what each one checks
-     and when it runs. Remove a row only with a reason. -->
+<!-- Development agents (code review, debugging, security) are part of the
+     project from day one. They check the work; they are not part of the
+     product. Runtime agents the product itself uses belong in section 4
+     (Architecture). List what each one checks and when it runs. Remove a
+     row only with a reason. -->
 
 | Agent | Checks | Runs when |
 |---|---|---|

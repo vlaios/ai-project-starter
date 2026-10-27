@@ -49,7 +49,7 @@ Read before any non-trivial work:
 - Hide storage and external services behind thin abstraction layers.
 - Follow the matching coding style skill in `.claude/skills/`.
 
-## Agents
+## Dev agents
 
 - **code-reviewer:** before every commit of a logical unit.
 - **debugger:** whenever something fails. Root cause with evidence before any fix.
